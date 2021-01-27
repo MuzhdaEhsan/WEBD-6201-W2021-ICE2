@@ -7,44 +7,36 @@
 "use strict";
 
 // contact class
-class Contact 
-{
+class Contact {
+
   // getters and Setters for private variables
-  get FullName() 
-  {
+  get FullName() {
     return this.m_fullName;
   }
-  set FullName(value) 
-  {
+  set FullName(value) {
     this.m_fullName = value;
   }
-  get ContactNumber() 
-  {
+  get ContactNumber() {
     return this.m_contactNumber;
   }
-  set ContactNumber(value) 
-  {
+  set ContactNumber(value) {
     this.m_contactNumber = value;
   }
-  get EmailAddress() 
-  {
+  get EmailAddress() {
     return this.m_emailAddress;
   }
-  set EmailAddress(value) 
-  {
+  set EmailAddress(value) {
     this.m_emailAddress = value;
   }
 
   // constructor
-  constructor(fullName, contactNumber, emailAddress) 
-  {
+  constructor(fullName, contactNumber, emailAddress) {
     this.m_fullName = fullName;
     this.m_contactNumber = contactNumber;
     this.m_emailAddress = emailAddress;
   }
   // methods 
-  toString() 
-  {
+  toString() {
     return `Full Name:     ${this.m_fullName}\nContact Number: ${this.m_contactNumber}\nEmail Address: ${this.m_emailAddress}`;
   }
 }
