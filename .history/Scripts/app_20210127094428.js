@@ -7,7 +7,7 @@
 "use strict";
 
 // contact class
-let Contact = /** @class */ (function () {
+var Contact = /** @class */ (function () {
     // constructor
     function Contact(fullName, contactNumber, emailAddress) {
         this.m_fullName = fullName;

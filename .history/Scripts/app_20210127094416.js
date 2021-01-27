@@ -7,7 +7,7 @@
 "use strict";
 
 // contact class
-let Contact = /** @class */ (function () {
+var Contact = /** @class */ (function () {
     // constructor
     function Contact(fullName, contactNumber, emailAddress) {
         this.m_fullName = fullName;
@@ -121,7 +121,7 @@ let Contact = /** @class */ (function () {
 
             let contact = new Contact(fullName.value, contactNumber.value, emailAddress.value);
 
-            console.log(contact.toString());
+            console.log(contact.toString);
         });
     }
 
