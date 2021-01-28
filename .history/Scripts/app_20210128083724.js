@@ -14,7 +14,8 @@ let myContact =
   "saysHello":function()
   {
     console.log(`${fullName} says Hello`);
-  },
+  }
+
   "someOtherObject": {
     "friendsList": [
       "Peter Parker", "Tony Stark", "Stephen Strange"

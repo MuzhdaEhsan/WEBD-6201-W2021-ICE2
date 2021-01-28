@@ -42,10 +42,7 @@ class Contact
     this.m_contactNumber = contactNumber;
     this.m_emailAddress = emailAddress;
   }
-  /**
-   * this method override the built-in toString for the Contact class
-   * @returns {string}
-   */
+  // methods 
   toString() 
   {
     return `Full Name:     ${this.m_fullName}\nContact Number: ${this.m_contactNumber}\nEmail Address: ${this.m_emailAddress}`;
@@ -56,10 +53,12 @@ class Contact
    */
   toJSON()
   {
-    return{
+    return 
+    {
       "fullName": this.fullName,
       "contactNumber": this.contactNumber,
       "emailAddress": this.emailAddress
+
     }
   }
 

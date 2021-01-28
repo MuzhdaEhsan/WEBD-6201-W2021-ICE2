@@ -60,6 +60,7 @@ class Contact
       "fullName": this.fullName,
       "contactNumber": this.contactNumber,
       "emailAddress": this.emailAddress
+
     }
   }
 

@@ -6,22 +6,7 @@
 
 "use strict";
 
-let myContact = 
-{
-  "firstName":"Muzhda",
-  "contactNumber":"234234",
-  "emailAddress":"muzhda@gmail.com",
-  "saysHello":function()
-  {
-    console.log(`${fullName} says Hello`);
-  },
-  "someOtherObject": {
-    "friendsList": [
-      "Peter Parker", "Tony Stark", "Stephen Strange"
-    ]
-  }
-};
-
+let myContact = new Object();
 
 (function()
 {
