@@ -70,17 +70,8 @@ class Contact
   serialize()
   {
     
-    if (this.fullName !== "" && this.ContactNumber !== "" && this.EmailAddress !== "")
-    {
-      return `${this.FullName},${this.ContactNumber},${this.EmailAddress}`;
-    }
-    
-    else 
-    {
-      console.error("One or more properties are empty!");
-      return null;
-    }
-    
+    if (this.fullName !== "" && this.contactNumber !==)
+    return `${this.fullName},${this.contactNumber},${this.emailAddress}`;
   }
 /**
  * this method takes the comma separated data string and assigns the values to the contact class properties
@@ -90,8 +81,8 @@ class Contact
   deserialize(data)
   {
     let propertyArray = data.split(",");
-    this.FullName = propertyArray[0];
-    this.ContactNumber = propertyArray[1];
-    this.EmailAddress = propertyArray[2];
+    this.fullName = propertyArray[0];
+    this.contactNumber = propertyArray[1];
+    this.emailAddress = propertyArray[2];
   }
 }

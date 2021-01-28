@@ -75,9 +75,9 @@ class Contact
       return `${this.FullName},${this.ContactNumber},${this.EmailAddress}`;
     }
     
-    else 
+    else if (this.fullName === "" && this.ContactNumber === "" && this.EmailAddress === "")
     {
-      console.error("One or more properties are empty!");
+      console.error("Contact is empty!");
       return null;
     }
     

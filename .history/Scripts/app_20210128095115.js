@@ -138,11 +138,8 @@ let myContact =
       {
         let contactList = document.getElementById("contactList");
         let data = "";
-        for (let index = 1; index < localStorage.length; index++){
+        for (let index = 1; index < localStorage -1; index++){
           let contactData = localStorage.getItem((index +1).toString());
-
-          
-
           let contact = new Contact();
           contact.deserialize(contactData);
 

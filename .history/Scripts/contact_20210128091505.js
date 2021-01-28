@@ -74,10 +74,9 @@ class Contact
     {
       return `${this.FullName},${this.ContactNumber},${this.EmailAddress}`;
     }
-    
-    else 
+    else
     {
-      console.error("One or more properties are empty!");
+      console.error("Conact is empty!");
       return null;
     }
     
@@ -90,8 +89,8 @@ class Contact
   deserialize(data)
   {
     let propertyArray = data.split(",");
-    this.FullName = propertyArray[0];
-    this.ContactNumber = propertyArray[1];
-    this.EmailAddress = propertyArray[2];
+    this.fullName = propertyArray[0];
+    this.contactNumber = propertyArray[1];
+    this.emailAddress = propertyArray[2];
   }
 }
